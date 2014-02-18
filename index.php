@@ -52,16 +52,16 @@ if ($myStats != 'false') {
 
 	$theDate = date('U');
 	$dt = new DateTime("@$theDate");
-	$address 						= $myStats[0];
-	$lastHourShares 				= $myStats[1]->lastHourShares;
-	$immatureBalance 				= $myStats[1]->immatureBalance;
-	$lastHourRejectedShares			= $myStats[1]->lastHourRejectedShares;
-	$paidOut 						= $myStats[1]->paidOut;
-	$unexchangedBalance 			= $myStats[1]->unexchangedBalance;
-	$megahashesPerSecond 			= $myStats[1]->megahashesPerSecond;
-	$bitcoinBalance 				= $myStats[1]->bitcoinBalance;
-	$rejectedMegahashesPerSecond 	= $myStats[1]->rejectedMegahashesPerSecond;
-	$predictedBalance				= $immatureBalance+$unexchangedBalance+$bitcoinBalance;
+	$address = $myStats[0];
+	$lastHourShares = $myStats[1]->lastHourShares;
+	$immatureBalance = $myStats[1]->immatureBalance;
+	$lastHourRejectedShares	= $myStats[1]->lastHourRejectedShares;
+	$paidOut = $myStats[1]->paidOut;
+	$unexchangedBalance = $myStats[1]->unexchangedBalance;
+	$megahashesPerSecond = $myStats[1]->megahashesPerSecond;
+	$bitcoinBalance = $myStats[1]->bitcoinBalance;
+	$rejectedMegahashesPerSecond = $myStats[1]->rejectedMegahashesPerSecond;
+	$predictedBalance = $immatureBalance+$unexchangedBalance+$bitcoinBalance;
 	
 	// Display Stats
 	echo '<h1>Middlecoin Stats from: '.$dt->format('Y-m-d H:i:s').'</h1>';
